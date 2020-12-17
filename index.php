@@ -1,10 +1,17 @@
 <?php
 echo 'Hello World!<br>';
-echo 4 + 2 ;
-echo '<br>';
-echo 7 % 4 ;
-echo '<br>';
+echo 4 + 2.'<br>';
+echo 7 % 4.'<br>';
+
 $num=1;
 echo $num.'<br>';
-$num=3;
-echo $num;
+
+$sum= 6 + 5;
+echo $sum.'<br>';
+
+$sum-=5
+echo $sum.'<br>';
+
+echo $sum++.'<br>';
+
+echo ++$sum.'<br>';
