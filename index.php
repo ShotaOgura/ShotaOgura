@@ -9,9 +9,9 @@ echo $num '<br>';
 $sum= 6 + 5;
 echo $sum '<br>';
 
-$sum-=5;
-echo $sum '<br>';
+//$sum-=5;
+//echo $sum '<br>';
 
-echo $sum++ '<br>';
+//echo $sum++ '<br>';
 
-echo ++$sum '<br>';
+//echo ++$sum '<br>';
