@@ -1,19 +1,16 @@
-<?php
-echo 'Hello World!<br>';
-echo 4 + 2;
-echo '<br>';
-echo 7 % 4;
-echo '<br>';
+<html>
+<header>
+<title>計算してくれるサイトっぽい</title>
+</header>
+    <body>
 
-$num=1;
-echo $num.'<br>';
 
-$sum= 6 + 5;
-echo $sum.'<br>';
+ 
+<form action="result.php" method="post">
+生年月日を入力してください。<br>
+<!-- 年月日の形式で入力させる -->
+<input type="date" name="birthday">
+<input type="submit" value="送信">
 
-$sum-=5;
-echo $sum.'<br>';
-
-echo $sum++.'<br>';
-
-echo ++$sum.'<br>';
+    </body>
+</html>
