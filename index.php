@@ -6,12 +6,13 @@
     <body>
 
 
- 
-<form action="result.php" method="post">
-生年月日を入力してください。<br>
-<!-- 年月日の形式で入力させる -->
-<input type="date" name="birthday">
-<input type="submit" value="送信">
-
+<div style="text-align:center">
+    <form action="result.php" method="post">
+        <h5>生年月日を入力してください。</h5><br>
+        <!-- 年月日の形式で入力させる -->
+        <input type="date" name="birthday">
+        <input type="submit" value="送信">
+    </form>
+</div>
     </body>
 </html>

@@ -20,13 +20,13 @@
     $dateDiff = $now->diff($birthdayDt);
     $diffYearsStr = $dateDiff->format('%y 歳 %m ヶ月 %d 日');
 ?>
-
-入力された生年月日 : <?php echo $birthdayDt->format("Y年m月d日") ?>
-<br>
-現在 : <?php echo $now->format("Y年m月d日") ?>
-<br>
-あなたは、<?php echo $diffYearsStr ?> です!!!
-
+<h5>
+    入力された生年月日 : <?php echo $birthdayDt->format("Y年m月d日") ?>
+    <br>
+    現在 : <?php echo $now->format("Y年m月d日") ?>
+    <br>
+    あなたは、<?php echo $diffYearsStr ?> です!!!
+</h5>
 
 <form action="index.php" method="get">
 <input type="submit" value="戻る">
