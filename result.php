@@ -1,5 +1,6 @@
 <html>
     <header>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
         <title>計算してくれるサイトっぽい</title>
     </header>
     <body>
@@ -20,9 +21,9 @@
     $diffYearsStr = $dateDiff->format('%y 歳 %m ヶ月 %d 日');
 ?>
 
-入力された生年月日 : <?php echo (string)$birthday ?>
+入力された生年月日 : <?php echo $birthdayDt->format("Y年m月d日") ?>
 <br>
-現在の年月日 : <?php echo $now->format("Y/m/d") ?>
+現在 : <?php echo $now->format("Y年m月d日") ?>
 <br>
 あなたは、<?php echo $diffYearsStr ?> です!!!
 
