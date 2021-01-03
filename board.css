@@ -1,0 +1,31 @@
+/* stylesheet */
+
+li{
+    list-style:none ;
+}
+
+.flame {
+   width: 400px;
+   height: 100px;
+   background: #f5f5f5;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 3px;
+   border:1px solid #000000;
+}
+
+.post {
+   position: relative;
+}
+
+.post.dt {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.post.name {
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+}
