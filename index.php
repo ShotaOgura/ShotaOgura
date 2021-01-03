@@ -17,12 +17,14 @@
         </div>
 
         <div class="post-form">
-        <form action="createPost.php" method="post">
+        <form action="" method="post">
             <label id="userName">名前</label>
             <input id="userName" type="text" name="userName" maxlength="6">
             <br>
             <label id="contents">投稿内容</label>
-            <input id="contents" type="textarea" name="contents" rows="5">
+            <textarea id="contents" name="contents"></textarea>
+            <br>
+            <div style="text-align:center"><input type="submit" value="投稿する"></div>
         </form>
         </div>
     <link rel="stylesheet" href="board.css">
