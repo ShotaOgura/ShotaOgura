@@ -10,15 +10,21 @@ echo '
 </header>
     <body>
         <h3 style="text-align:center">1ちゃんねる</h3>
+        <h5 style="text-align:center">日本最古のインターネット掲示板です。</h5>
         <div class="post-history">
         ';
 
         
         foreach( $data as $value ) {
+
+        $postedDateTime = new DateTime($value['posted']);
+        // 日本時間に変換
+        $postedDateTime = $postedDateTime->add(new DateInterval('PT9H'));
+
          echo '
             <li class="frame post">'
                  . "$value[contents]<br>" . '<br>
-                    <div class="post dt">' . $value['posted'] . '</div><div class="post name">' . $value['userName'] .'</div><br>
+                    <div class="post dt">' . $postedDateTime->format('Y/m/d H:i:s') . '</div><div class="post name">' . $value['userName'] .'</div><br>
             </li>
             ';
         };
