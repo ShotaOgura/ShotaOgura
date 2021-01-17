@@ -39,3 +39,7 @@ li{
    margin-bottom: 3px;
    border:1px solid #000000;
 }
+
+.post-form label{
+  vertical-align: top;
+}

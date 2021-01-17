@@ -1,3 +1,8 @@
+<?php
+require 'getPosts.php';
+$data = (get());
+
+echo '
 <html>
 <header>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
@@ -6,18 +11,22 @@
     <body>
         <h3 style="text-align:center">1ちゃんねる</h3>
         <div class="post-history">
-            <li class="frame post">
-                    今日はいい天気ですね<br>
-                    <div class="post dt">2021/1/3 11:17</div><div class="post name">おぐらくん</div><br>
+        ';
+
+        
+        foreach( $data as $value ) {
+         echo '
+            <li class="frame post">'
+                 . "$value[contents]<br>" . '<br>
+                    <div class="post dt">' . $value['posted'] . '</div><div class="post name">' . $value['userName'] .'</div><br>
             </li>
-            <li class="frame post">
-                    こんにちは<br>
-                    <div class="post dt">2021/1/3 11:44</div><div class="post name"> あだちくん</div><br>
-            </li>
+            ';
+        };
+        echo '
         </div>
 
         <div class="post-form">
-        <form action="" method="post">
+        <form action="post.php" method="post">
             <label id="userName">名前</label>
             <input id="userName" type="text" name="userName" maxlength="6">
             <br>
@@ -30,3 +39,4 @@
     <link rel="stylesheet" href="board.css">
     </body>
 </html>
+';
